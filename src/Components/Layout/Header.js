@@ -3,56 +3,48 @@ import React from "react";
 function Header() {
     return (
       <>
-            <div className="header">
-            <div className="container-fluid">
-               <div className="row">
-                  <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div className="full">
-                        <div className="center-desk">
-                           <div className="logo">
-                              <a href="index.html"><img src="./images/logo.png" alt="#" /></a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav className="navigation navbar navbar-expand-md navbar-dark ">
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                        </button>
-                        <div className="collapse navbar-collapse" id="navbarsExample04">
-                           <ul className="navbar-nav mr-auto">
-                              <li className="nav-item active">
-                                 <a className="nav-link" href="index.html">Home</a>
-                              </li>
-                              <li className="nav-item">
-                                 <a className="nav-link" href="">About</a>
-                              </li>
-                              <li className="nav-item">
-                                 <a className="nav-link" href="">Computer</a>
-                              </li>
-                              <li className="nav-item">
-                                 <a className="nav-link" href="">Laptop</a>
-                              </li>
-                              <li className="nav-item">
-                                 <a className="nav-link" href="">Products</a>
-                              </li>
-                              <li className="nav-item">
-                                 <a className="nav-link" href="">Contact Us</a>
-                              </li>
-                              <li className="nav-item d_none">
-                                 <a className="nav-link" href="#"><i className="fa fa-search" aria-hidden="true"></i></a>
-                              </li>
-                              <li className="nav-item d_none">
-                                 <a className="nav-link" href="#">Login</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
+            <div class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="user-menu">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user"></i> My Account</a></li>
+                            <li><a href="#"><i class="fa fa-heart"></i> Wishlist</a></li>
+                            <li><a href="cart.html"><i class="fa fa-user"></i> My Cart</a></li>
+                            <li><a href="checkout.html"><i class="fa fa-user"></i> Checkout</a></li>
+                            <li><a href="#"><i class="fa fa-user"></i> Login</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="header-right">
+                        <ul class="list-unstyled list-inline">
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">currency :</span><span class="value">USD </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">USD</a></li>
+                                    <li><a href="#">INR</a></li>
+                                    <li><a href="#">GBP</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown dropdown-small">
+                                <a data-toggle="dropdown" data-hover="dropdown" class="dropdown-toggle" href="#"><span class="key">language :</span><span class="value">English </span><b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">French</a></li>
+                                    <li><a href="#">German</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-         </div>
+        </div>
+    </div> 
+    
          
    
       </>
