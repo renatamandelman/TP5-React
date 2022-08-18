@@ -1,10 +1,14 @@
 import './App.css';
 import Header from './Components/Layout/Header.js'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import Menu from './Components/Layout/Menu';
+import './css/style.css'
+import './css/responsive.css'
+import './css/carousel.css'
 
 function App() {
   return (
-   <Header/>
+   <Header/> ,
+   <Menu/>
   );
 }
 
