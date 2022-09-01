@@ -30,7 +30,7 @@ function Menu() {
         </div>
     </div>
     
-    <div class="product-big-title-area">
+    {/* <div class="product-big-title-area">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -40,7 +40,8 @@ function Menu() {
                 </div>
             </div>
         </div>
-    </div>
+    </div> */}
+    
     </>
 
     )
