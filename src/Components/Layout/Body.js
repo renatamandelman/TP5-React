@@ -132,8 +132,9 @@ return (
                 <div class="col-md-12">
                     <div class="latest-product">
                         <h2 class="section-title">Latest Products</h2>
-                        <div class="product-carousel">
-                            <div class="single-product">
+                        <div class="row product-carousel">
+
+                            <div class=" col-sm-2 single-product">
                                 <div class="product-f-image">
                                     <img src={product1} alt="" class="img"/>
                                     <div class="product-hover">
@@ -148,7 +149,7 @@ return (
                                     <ins>$700.00</ins> <del>$800.00</del>
                                 </div> 
                             </div>
-                            <div class="single-product">
+                            <div class=" col-sm-2 single-product">
                                 <div class="product-f-image">
                                     <img src={product2}  alt=""/>
                                     <div class="product-hover">
@@ -162,7 +163,7 @@ return (
                                     <ins>$899.00</ins> <del>$999.00</del>
                                 </div> 
                             </div>
-                            <div class="single-product">
+                            <div class="col-sm-2 single-product">
                                 <div class="product-f-image">
                                     <img src={product3}  alt=""/>
                                     <div class="product-hover">
@@ -177,7 +178,7 @@ return (
                                     <ins>$400.00</ins> <del>$425.00</del>
                                 </div>                                 
                             </div>
-                            <div class="single-product">
+                            <div class="col-sm-2 single-product">
                                 <div class="product-f-image">
                                     <img src={product4}  alt=""/>
                                     <div class="product-hover">
@@ -192,7 +193,7 @@ return (
                                     <ins>$200.00</ins> <del>$225.00</del>
                                 </div>                            
                             </div>
-                            <div class="single-product">
+                            <div class="col-sm-2 single-product">
                                 <div class="product-f-image">
                                     <img src={product5}  alt=""/>
                                     <div class="product-hover">
@@ -207,7 +208,7 @@ return (
                                     <ins>$1200.00</ins> <del>$1355.00</del>
                                 </div>                                 
                             </div>
-                            <div class="single-product">
+                            <div class="col-sm-2 single-product">
                                 <div class="product-f-image">
                                     <img src={product6}  alt=""/>
                                     <div class="product-hover">
