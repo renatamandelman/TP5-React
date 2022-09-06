@@ -5,6 +5,17 @@ import product3 from '../../img/product-3.jpg'
 import product4 from '../../img/product-4.jpg'
 import product5 from '../../img/product-5.jpg'
 import product6 from '../../img/product-6.jpg'
+
+import brand1 from '../../img/services_logo__1.jpg'
+import brand2 from '../../img/services_logo__2.jpg'
+import brand3 from '../../img/services_logo__3.jpg'
+import brand4 from '../../img/services_logo__4.jpg'
+
+import play from '../../img/product-thumb-1.jpg'
+import celular from '../../img/product-thumb-2.jpg'
+import computadora from '../../img/product-thumb-3.jpg'
+import tele from '../../img/product-thumb-4.jpg'
+
 function Body(){
 return (
     <>
@@ -136,7 +147,7 @@ return (
 
                             <div class=" col-sm-2 single-product">
                                 <div class="product-f-image">
-                                    <img src={product1} alt="" class="img"/>
+                                    <img src={product1} alt="ea" class="img"/>
                                     <div class="product-hover">
                                         <a href="#" class="add-to-cart-link"><i class="fa fa-shopping-cart"></i> Add to cart</a>
                                         <a href="single-product.html" class="view-details-link"><i class="fa fa-link"></i> See details</a>
@@ -238,14 +249,10 @@ return (
                     <div class="brand-wrapper">
                         <h2 class="section-title">Brands</h2>
                         <div class="brand-list">
-                            <img src="img/services_logo__1.jpg" alt=""/>
-                            <img src="img/services_logo__2.jpg" alt=""/>
-                            <img src="img/services_logo__3.jpg" alt=""/>
-                            <img src="img/services_logo__4.jpg" alt=""/>
-                            <img src="img/services_logo__1.jpg" alt=""/>
-                            <img src="img/services_logo__2.jpg" alt=""/>
-                            <img src="img/services_logo__3.jpg" alt=""/>
-                            <img src="img/services_logo__4.jpg" alt=""/>                            
+                            <img style={{ marginLeft: '5px' }} src={brand1} alt=""/>
+                            <img style={{ marginLeft: '5px' }} src={brand2} alt=""/>
+                            <img style={{ marginLeft: '5px' }} src={brand3} alt=""/>
+                            <img style={{ marginLeft: '5px' }} src={brand4} alt=""/>              
                         </div>
                     </div>
                 </div>
@@ -263,7 +270,7 @@ return (
                         <a href="" class="wid-view-more">View All</a>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                <img src="img/product-thumb-1.jpg" alt="" class="product-thumb"/>
+                                <img src={tele} alt="" class="product-thumb"/>
 
                                 </a>
                             <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
@@ -280,7 +287,7 @@ return (
                         </div>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                <img src="img/product-thumb-2.jpg" alt="" class="product-thumb"/>
+                                <img src={computadora} alt="" class="product-thumb"/>
 
                                 </a>
                             <h2><a href="single-product.html">Apple new mac book 2015</a></h2>
@@ -297,7 +304,7 @@ return (
                         </div>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                <img src="img/product-thumb-3.jpg" alt="" class="product-thumb"/>
+                                <img src={celular} alt="" class="product-thumb"/>
                                     
                                 </a>
                             <h2><a href="single-product.html">Apple new i phone 6</a></h2>
@@ -320,7 +327,7 @@ return (
                         <a href="#" class="wid-view-more">View All</a>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                <img src="img/product-thumb-4.jpg" alt="" class="product-thumb"/>
+                                <img src={play} alt="" class="product-thumb"/>
 
                                 </a>
                             <h2><a href="single-product.html">Sony playstation microsoft</a></h2>
@@ -337,7 +344,7 @@ return (
                         </div>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                <img src="img/product-thumb-1.jpg" alt="" class="product-thumb"/>
+                                <img src={tele} alt="" class="product-thumb"/>
 
                                 </a>
                             <h2><a href="single-product.html">Sony Smart Air Condtion</a></h2>
@@ -354,7 +361,7 @@ return (
                         </div>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                 <img src="img/product-thumb-2.jpg" alt="" class="product-thumb"/> 
+                                 <img src={celular} alt="" class="product-thumb"/> 
 
                                 </a>
                             <h2><a href="single-product.html">Samsung gallaxy note 4</a></h2>
@@ -377,7 +384,7 @@ return (
                         <a href="#" class="wid-view-more">View All</a>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                 <img src="img/product-thumb-3.jpg" alt="" class="product-thumb"/> 
+                                 <img src={celular} alt="" class="product-thumb"/> 
 
                                 </a>
                             <h2><a href="single-product.html">Apple new i phone 6</a></h2>
@@ -394,7 +401,7 @@ return (
                         </div>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                                 <img src="img/product-thumb-4.jpg" alt="" class="product-thumb"/> 
+                                 <img src={celular} alt="" class="product-thumb"/> 
 
                                 </a>
                             <h2><a href="single-product.html">Samsung gallaxy note 4</a></h2>
@@ -411,7 +418,7 @@ return (
                         </div>
                         <div class="single-wid-product">
                             <a href="single-product.html">
-                              <img src="../img/product-thumb-1.jpg" alt="" class="product-thumb"/> 
+                              <img src={play} alt="" class="product-thumb"/> 
 
                                 </a>
                             <h2><a href="single-product.html">Sony playstation microsoft</a></h2>
