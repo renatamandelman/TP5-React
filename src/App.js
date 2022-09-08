@@ -1,7 +1,5 @@
 import './App.css';
-import Header from './Components/Layout/Header.js'
-import Menu from './Components/Layout/Menu';
-import Body from './Components/Layout/Body';
+import AppRouter from './AppRouter';
 import './css/style.css'
 import './css/responsive.css'
 import './css/carousel.css'
@@ -9,9 +7,7 @@ import './css/carousel.css'
 function App() {
   return (
     <>
-   <Header/> 
-    <Menu/>
-    <Body/>
+  <AppRouter/>
     </>
   );
 }
