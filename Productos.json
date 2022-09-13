@@ -1,8 +1,9 @@
 {
    {
     "id":1,
-   "title":"Televisor",
-   "img" : "src/img/product-1.jpg"
+   "title":"Sony Smart TV - 2015",
+   "img" : "src/img/product-1.jpg",
+   "precio": "$450"
 
 },
 }
