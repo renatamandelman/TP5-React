@@ -37,12 +37,11 @@ function Header() {
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><Link to="/">Home</Link></li>
-                        <li><Link to="/shop-page">Shop page</Link></li>
-                        <li><Link to="fr">Single product</Link></li>
+                   
+
+                    
                         <li> <Link to="/cart">Cart</Link></li>
-                        <li><Link to="ff">Checkout</Link></li>
-                        <li><Link to="ff">Category</Link></li>
-                        <li><Link to="ff">Others</Link></li>
+            
                         <li><Link to="ff">Contact</Link></li>
                     </ul>
                 </div>  

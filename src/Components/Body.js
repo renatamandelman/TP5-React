@@ -1,350 +1,69 @@
 import React from "react";
-import product1 from '../img/product-1.jpg'
-import product2 from '../img/product-2.jpg'
-import product3 from '../img/product-3.jpg'
-import product4 from '../img/product-4.jpg'
-import product5 from '../img/product-5.jpg'
-import product6 from '../img/product-6.jpg'
+import Productos from "./Productos";
 
-import brand1 from '../img/services_logo__1.jpg'
-import brand2 from '../img/services_logo__2.jpg'
-import brand3 from '../img/services_logo__3.jpg'
-import brand4 from '../img/services_logo__4.jpg'
 
-import play from '../img/product-thumb-1.jpg'
-import celular from '../img/product-thumb-2.jpg'
-import computadora from '../img/product-thumb-3.jpg'
-import tele from '../img/product-thumb-4.jpg'
+function Body() {
+    console.log(Productos)
+    return (
+        <>
 
-function Body(){
-return (
-    <>
-   
-   
-     <div class="slider-area">
-       <div class="zigzag-bottom"></div>
-        <div id="slide-list" class="carousel carousel-fade slide" data-ride="carousel">
-            
-            <div class="slide-bulletz">
+            {/* <div class="product-big-title-area">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <ol class="carousel-indicators slide-indicators">
-                                <li data-target="#slide-list" data-slide-to="0" class="active"></li>
-                                <li data-target="#slide-list" data-slide-to="1"></li>
-                                <li data-target="#slide-list" data-slide-to="2"></li>
-                            </ol>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="single-slide">
-                        <div class="slide-bg slide-one"></div>
-                        <div class="slide-text-wrapper">
-                            <div class="slide-text">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6 col-md-offset-6">
-                                            <div class="slide-content">
-                                                <h2>We are awesome</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, dolorem, excepturi. Dolore aliquam quibusdam ut quae iure vero exercitationem ratione!</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ab molestiae minus reiciendis! Pariatur ab rerum, sapiente ex nostrum laudantium.</p>
-                                                <a href="" class="readmore">Learn more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="product-bit-title text-center">
+                                <h2>Shop</h2>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="single-slide">
-                        <div class="slide-bg slide-two"></div>
-                        <div class="slide-text-wrapper">
-                            <div class="slide-text">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6 col-md-offset-6">
-                                            <div class="slide-content">
-                                                <h2>We are great</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe aspernatur, dolorum harum molestias tempora deserunt voluptas possimus quos eveniet, vitae voluptatem accusantium atque deleniti inventore. Enim quam placeat expedita! Quibusdam!</p>
-                                                <a href="" class="readmore">Learn more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            </div> */}
+
+
+            <div class="single-product-area">
+                <div class="zigzag-bottom"></div>
+                <div class="container">
+                    <div className="row ">
+
+                       <Productos/>
                 </div>
-                <div class="item">
-                    <div class="single-slide">
-                        <div class="slide-bg slide-three"></div>
-                        <div class="slide-text-wrapper">
-                            <div class="slide-text">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-md-6 col-md-offset-6">
-                                            <div class="slide-content">
-                                                <h2>We are superb</h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, eius?</p>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti voluptates necessitatibus dicta recusandae quae amet nobis sapiente explicabo voluptatibus rerum nihil quas saepe, tempore error odio quam obcaecati suscipit sequi.</p>
-                                                <a href="" class="readmore">Learn more</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="product-pagination text-center">
+                                <nav>
+                                    <ul class="pagination">
+                                        <li>
+                                            <a href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">4</a></li>
+                                        <li><a href="#">5</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-        </div>        
-    </div>
-    <div class="promo-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo">
-                        <i class="fa fa-refresh"></i>
-                        <p>30 Days return</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo">
-                        <i class="fa fa-truck"></i>
-                        <p>Free shipping</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo">
-                        <i class="fa fa-lock"></i>
-                        <p>Secure payments</p>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <div class="single-promo">
-                        <i class="fa fa-gift"></i>
-                        <p>New products</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-    
-    
-    <div class="brands-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="brand-wrapper">
-                        <h2 class="section-title">Brands</h2>
-                        <div class="brand-list">
-                            <img style={{ marginLeft: '5px' }} src={brand1} alt=""/>
-                            <img style={{ marginLeft: '5px' }} src={brand2} alt=""/>
-                            <img style={{ marginLeft: '5px' }} src={brand3} alt=""/>
-                            <img style={{ marginLeft: '5px' }} src={brand4} alt=""/>              
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-    
-    <div class="product-widget-area">
-        <div class="zigzag-bottom"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="single-product-widget">
-                        <h2 class="product-wid-title">Top Sellers</h2>
-                        <a href="" class="wid-view-more">View All</a>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                <img src={tele} alt="" class="product-thumb"/>
 
-                                </a>
-                            <h2><a href="single-product.html">Sony Smart TV - 2015</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                <img src={computadora} alt="" class="product-thumb"/>
 
-                                </a>
-                            <h2><a href="single-product.html">Apple new mac book 2015</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                <img src={celular} alt="" class="product-thumb"/>
-                                    
-                                </a>
-                            <h2><a href="single-product.html">Apple new i phone 6</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-product-widget">
-                        <h2 class="product-wid-title">Recently Viewed</h2>
-                        <a href="#" class="wid-view-more">View All</a>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                <img src={play} alt="" class="product-thumb"/>
 
-                                </a>
-                            <h2><a href="single-product.html">Sony playstation microsoft</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                <img src={tele} alt="" class="product-thumb"/>
 
-                                </a>
-                            <h2><a href="single-product.html">Sony Smart Air Condtion</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                 <img src={celular} alt="" class="product-thumb"/> 
 
-                                </a>
-                            <h2><a href="single-product.html">Samsung gallaxy note 4</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="single-product-widget">
-                        <h2 class="product-wid-title">Top New</h2>
-                        <a href="#" class="wid-view-more">View All</a>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                 <img src={celular} alt="" class="product-thumb"/> 
 
-                                </a>
-                            <h2><a href="single-product.html">Apple new i phone 6</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                                 <img src={celular} alt="" class="product-thumb"/> 
+        </>
+    )
 
-                                </a>
-                            <h2><a href="single-product.html">Samsung gallaxy note 4</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                        <div class="single-wid-product">
-                            <a href="single-product.html">
-                              <img src={play} alt="" class="product-thumb"/> 
-
-                                </a>
-                            <h2><a href="single-product.html">Sony playstation microsoft</a></h2>
-                            <div class="product-wid-rating">
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                            <div class="product-wid-price">
-                                <ins>$400.00</ins> <del>$425.00</del>
-                            </div>                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    
-   
-    
-    
-    </>
-)
-
-} 
+}
 
 export default Body;

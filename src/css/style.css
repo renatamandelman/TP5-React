@@ -161,7 +161,7 @@ line-height: 90px;
 
 .slider-area {clear: both}
 .slider-area, .promo-area, .brands-area, .maincontent-area, .footer-top-area, .product-widget-area, .product-breadcroumb-area, .single-product-area {position: relative;overflow: hidden}
-.zigzag-bottom {}
+
 .slide-text-wrapper {
   height: 700px;
 }
@@ -302,7 +302,7 @@ z-index: 9;
     color: #fff;
     display: block;
     font-size: 16px;
-    left: 10%;
+    left: 5%;
     margin: 0;
     padding: 10px;
     position: absolute;
@@ -310,6 +310,7 @@ z-index: 9;
     text-transform: uppercase;
     border: 1px solid #1abc9c;
     z-index: 99;transition: .4s;
+    width:90%
 }
 .product-hover a:hover {
   background: #000;
@@ -336,6 +337,7 @@ z-index: 9;
 
 .single-product h2 a {
     color: #222;
+
 }
 .single-product p {
     color: #1abc9c;
@@ -345,7 +347,7 @@ z-index: 9;
 .single-product {
   overflow: hidden;
 }
-.single-product:hover {}
+
 .single-product:hover .product-hover a.add-to-cart-link {top: 20%;}
 .single-product:hover .product-hover a.view-details-link {bottom: 20%;}
 .single-product:hover .product-hover:after{left: 0}
@@ -416,12 +418,8 @@ z-index: 9;
     margin-right: 10px;
     text-decoration: none;
 }
-.single-wid-product h2 a {
-    color: #222;
-}
-.single-wid-product h2 a:hover, .single-product h2 a:hover {
-    color: #1ABC9C;
-}
+
+
 .wid-view-more {
     background: none repeat scroll 0 0 #1abc9c;
     color: #fff;
@@ -832,14 +830,10 @@ td.actions div.coupon {
 }
 .cross-sells {
     float: left;
-    margin-right: 3%;
-    width: 57%;
+    /* margin-right: 3%;
+    width: 57%; */
 }
-.cart_totals {
-    float: right;
-    margin-bottom: 50px;
-    width: 40%;
-}
+
 .cart-collaterals h2 {
     color: #1abc9c;
     font-size: 25px;
@@ -870,8 +864,7 @@ div.cart-collaterals ul.products li.product {
 .cart_totals table th {
     background: none repeat scroll 0 0 #f4f4f4;
 }
-.onsale {
-}
+
 div.cart-collaterals ul.products li.product .onsale {
     background: none repeat scroll 0 0 #1abc9c;
     color: #fff;
@@ -890,8 +883,7 @@ div.cart-collaterals ul.products li.product .price {
     margin-bottom: 10px;
     overflow: hidden;
 }
-.price > ins {
-}
+
 div.cart-collaterals ul.products li.product .price ins {
     color: #1abc9c;
     font-weight: 700;
@@ -1015,4 +1007,8 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 
 .pagination > li > a, .pagination > li > span {
   color: #1abc9c;
+}
+
+.cart_totals{
+    width: 100%
 }

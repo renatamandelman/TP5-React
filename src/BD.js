@@ -1,4 +1,4 @@
-[
+ export const ProductosArray = [
    {
 
       "id":1,
@@ -24,7 +24,7 @@
    {
       "id":4,
       "title":"Sony playstation microsoft",
-      "img":"https://wpexpand.com/demo/html/eElectronics/img/product-4.jpgv",
+      "img":"https://wpexpand.com/demo/html/eElectronics/img/product-4.jpg",
       "precio":225
       
    },
@@ -42,7 +42,6 @@
       "precio":400
       
    }
->>>>>>> 306bd823388088d9f6eacf2d73dad0b317ec2b1a
 
 
 
