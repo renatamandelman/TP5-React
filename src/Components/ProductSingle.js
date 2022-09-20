@@ -2,43 +2,39 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-function ProductSingle({producto}) {
-
-    
+function ProductSingle({ title, precio, img }) {
     return (
         <>
-            <div className="row product-carousel">
-
-            <div class="col-md-3 col-sm-6 ">
-        
-                        <div className='single-product'>
-                    <div className="product-f-image">
-                    <div class="product-upper">
-
-                       
-                        <img src={producto.img} alt="ea" className="img" />
-                        <div className="product-hover">
-                            <a href="#" className="add-to-cart-link"><i className="fa fa-shopping-cart"></i> Add to cart</a>
-                            <a href="single-product.html" className="view-details-link"><i className="fa fa-link"></i> See details</a>
+                
+                <div class="product-carousel col-md-3 col-sm-6 ">
+                    <div className='single-product'>
+                        <div className="product-f-image">
+                            <div class="product-upper">
+                                <img src={img} alt="" className="img" />
+                                <div className="product-hover">
+                                    <a href="/cart" className="add-to-cart-link"><i className="fa fa-shopping-cart"></i> Add to cart</a>
+                                    <a href="*" className="view-details-link"><i className="fa fa-link"></i> See details</a>
+                                </div>
+                            </div>
                         </div>
+                        <h2>{title}</h2>
+
+                        <div className="product-carousel-price">
+                            <ins>${precio}</ins>
                         </div>
-                    </div>
-
-                    <h2><a href="single-product.html">{producto.props.title}</a></h2>
-
-                    <div className="product-carousel-price">
-                        <ins>${producto.precio}</ins> 
                     </div>
                 </div>
-            </div>
-        </div>
+       
+
         </>
     )
-    
+
 }
 ProductSingle.propTypes = {
-    title: PropTypes.string
-  };
+    title: PropTypes.string,
+    img: PropTypes.string,
+    precio: PropTypes.number
+};
 export default ProductSingle;
 
 

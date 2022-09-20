@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types'
+
 
 import celular from '../img/product-thumb-2.jpg'
 
@@ -117,7 +117,9 @@ function Cart() {
     </div>      
                         </>
                         )
+                        
 
 }
+
 
  export default Cart;

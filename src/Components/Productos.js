@@ -4,7 +4,6 @@ import ProductSingle from './ProductSingle'
 
 function Productos() {
     const [productos, setProductos] = useState([])
-
    
     useEffect(() => {
         setProductos(ProductosArray) 
@@ -12,7 +11,7 @@ function Productos() {
 
     return (
         productos.map((producto) => (
-            <ProductSingle key={producto.id} producto={producto} />
+            <ProductSingle key={producto.id} {...producto} />
 
         ))
     )
