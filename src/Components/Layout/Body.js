@@ -1,5 +1,5 @@
 import React from "react";
-import Productos from "./Productos";
+import Productos from "../Productos";
 
 
 function Body() {
