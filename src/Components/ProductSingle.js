@@ -1,13 +1,13 @@
 import React from 'react'
 
-
+import PropTypes from 'prop-types'
 
 function ProductSingle({producto}) {
 
     
     return (
         <>
-            <div classNameM="row product-carousel">
+            <div className="row product-carousel">
 
             <div class="col-md-3 col-sm-6 ">
         
@@ -24,7 +24,7 @@ function ProductSingle({producto}) {
                         </div>
                     </div>
 
-                    <h2><a href="single-product.html">{producto.title}</a></h2>
+                    <h2><a href="single-product.html">{producto.props.title}</a></h2>
 
                     <div className="product-carousel-price">
                         <ins>${producto.precio}</ins> 
@@ -34,8 +34,11 @@ function ProductSingle({producto}) {
         </div>
         </>
     )
+    
 }
-
+ProductSingle.propTypes = {
+    title: PropTypes.string
+  };
 export default ProductSingle;
 
 
