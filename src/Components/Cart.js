@@ -1,11 +1,12 @@
 import React from "react";
-
-
-import celular from '../img/product-thumb-2.jpg'
+import {ProductosArray} from '../BD'
+import { useCartContext } from "./Context/cartContext";
+import CartItem from "./cartItem";
 
 
 
 function Cart() {
+    const {cartItems, AddToCart} = useCartContext()
     return (
     <>
 
@@ -19,9 +20,6 @@ function Cart() {
                         <div className="woocommerce">
 
                             <div className="row">
-
-
-
                             <div className="col-md-9">
                                 <form method="post" action="#">
                                     <table cellspacing="0" className="shop_table cart">
@@ -36,35 +34,8 @@ function Cart() {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr className="cart_item">
-                                                <td className="product-remove">
-                                                    <a title="Remove this item" className="remove" href="#">×</a> 
-                                                </td>
-
-                                                <td className="product-thumbnail">
-                                                    <a href="single-product.html"><img width="145" height="145" alt="poster_1_up" className="shop_thumbnail" src={celular}/></a>
-                                                </td>
-
-                                                <td className="product-name">
-                                                    <a href="single-product.html">Ship Your Idea</a> 
-                                                </td>
-
-                                                <td className="product-price">
-                                                    <span className="amount">£15.00</span> 
-                                                </td>
-
-                                                <td className="product-quantity">
-                                                    <div className="quantity buttons_added">
-                                                        <input type="button" className="minus" value="-"/>
-                                                        <input type="number" size="4" className="input-text qty text" title="Qty" value="1" min="0" step="1"/>
-                                                        <input type="button" className="plus" value="+"/>
-                                                    </div>
-                                                </td>
-
-                                                <td className="product-subtotal">
-                                                    <span className="amount">£15.00</span> 
-                                                </td>
-                                            </tr>
+                                                {cartItems.map(prod => ( <CartItem key={prod.id} {...prod}/>) ) }
+                                               
                                             <tr>
                                                 <td className="actions" colspan="6">
                                                     
@@ -87,7 +58,7 @@ function Cart() {
                                             <tbody>
                                                 <tr className="cart-subtotal">
                                                     <th>Cart Subtotal</th>
-                                                    <td><span className="amount">£15.00</span></td>
+                                                    <td><span className="amount">${cartItems.map(c => c.cantidad * c.precio).reduce((a, b) => a + b, 0)}</span></td>
                                                 </tr>
 
                                                 <tr className="shipping">
@@ -97,7 +68,7 @@ function Cart() {
 
                                                 <tr className="order-total">
                                                     <th>Order Total</th>
-                                                    <td><strong><span className="amount">£15.00</span></strong> </td>
+                                                    <td><strong><span className="amount">${cartItems.map(c => c.cantidad * c.precio).reduce((a, b) => a + b, 0)}</span></strong> </td>
                                                 </tr>
                                             </tbody>
                                         </table>

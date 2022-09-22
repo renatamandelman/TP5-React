@@ -3,12 +3,13 @@ import AppRouter from './AppRouter';
 import './css/style.css'
 import './css/responsive.css'
 import './css/carousel.css'
+import { ShoppingCartProvider } from './Components/Context/cartContext';
 
 function App() {
   return (
-    <>
-  <AppRouter/>
-    </>
+    <ShoppingCartProvider>
+      <AppRouter/>
+    </ShoppingCartProvider>
   );
 }
 

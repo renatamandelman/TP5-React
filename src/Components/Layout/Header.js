@@ -1,7 +1,11 @@
 import React from "react";
 import { Link } from 'react-router-dom'
+import { useCartContext } from "../Context/cartContext";
+
 
 function Header() {
+    const {cartItems} = useCartContext()
+
     return(
     <>
      
@@ -17,7 +21,7 @@ function Header() {
                 
                 <div class="col-sm-6">
                     <div class="shopping-item">
-                    <Link to="/cart">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">5</span></Link>
+                    <Link to="/cart">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">{cartItems.map(c => c.cantidad).reduce((a, b) => a + b, 0)}</span></Link>
                     </div>
                 </div>
             </div>

@@ -1,8 +1,10 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 import PropTypes from 'prop-types'
+import {useCartContext} from './Context/cartContext'
 
-function ProductSingle({ title, precio, img }) {
+function ProductSingle({ id,title, precio, img }) {
+    const {AddToCart } = useCartContext()
     return (
         <>
                 
@@ -12,8 +14,8 @@ function ProductSingle({ title, precio, img }) {
                             <div class="product-upper">
                                 <img src={img} alt="" className="img" />
                                 <div className="product-hover">
-                                    <a href="/cart" className="add-to-cart-link"><i className="fa fa-shopping-cart"></i> Add to cart</a>
-                                    <a href="*" className="view-details-link"><i className="fa fa-link"></i> See details</a>
+                                    <button  onClick={() => AddToCart(id)}  className="add-to-cart-link"><i className="fa fa-shopping-cart"></i> Add to cart</button>
+                                    <Link to="*" className="view-details-link"><i className="fa fa-link"></i> See details</Link>
                                 </div>
                             </div>
                         </div>
@@ -31,6 +33,7 @@ function ProductSingle({ title, precio, img }) {
 
 }
 ProductSingle.propTypes = {
+    id: PropTypes.number,
     title: PropTypes.string,
     img: PropTypes.string,
     precio: PropTypes.number

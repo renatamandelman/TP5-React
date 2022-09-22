@@ -296,7 +296,7 @@ z-index: 9;
   top: 0;
   width: 100%;transition: .4s;
 }
-.product-hover a {
+.product-hover a, .product-hover button {
     background: none repeat scroll 0 0 #1abc9c;
     border-radius: 5px;
     color: #fff;
@@ -325,7 +325,7 @@ z-index: 9;
 .product-hover a i.fa {
     margin-right: 5px;
 }
-.product-hover a.add-to-cart-link {top: -25%;}
+.product-hover button.add-to-cart-link {top: -25%;}
 .product-hover a.view-details-link { bottom: -25%;}
 .single-product h2 {
     font-size: 18px;
@@ -348,7 +348,7 @@ z-index: 9;
   overflow: hidden;
 }
 
-.single-product:hover .product-hover a.add-to-cart-link {top: 20%;}
+.single-product:hover .product-hover button.add-to-cart-link {top: 20%;}
 .single-product:hover .product-hover a.view-details-link {bottom: 20%;}
 .single-product:hover .product-hover:after{left: 0}
 
