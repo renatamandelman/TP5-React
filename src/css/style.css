@@ -1019,7 +1019,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .product-upper { 
     height: 335.75px;
 }
-
+/*
 .number-input input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
@@ -1133,4 +1133,4 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
     .shopping-cart .def-number-input.number-input button.plus:before,
     .shopping-cart .def-number-input.number-input button.plus:after {
     background-color: #4285f4;
-    }
+    }*/

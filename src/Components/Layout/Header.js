@@ -27,17 +27,10 @@ function Header() {
             </div>
         </div>
     </div> 
-    <div className="mainmenu-area">
+    <div className="mainmenu-area" style={{height: '50px'}}>
         <div className="container">
             <div className="row">
                 <div className="navbar-header">
-                    <button type="button" className="my-navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span className="sr-only">Toggle navigation</span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                        <span className="icon-bar"></span>
-                    </button>
-                </div> 
                 <div className="navbar-collapse collapse">
                     <ul className="nav navbar-nav">
                         <li className="active"><Link to="/">Home</Link></li>
@@ -49,6 +42,7 @@ function Header() {
                         <li><Link to="ff">Contact</Link></li>
                     </ul>
                 </div>  
+                </div> 
             </div>
         </div>
     </div></>
