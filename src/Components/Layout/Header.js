@@ -10,37 +10,37 @@ function Header() {
     <>
      
     
-    <div class="site-branding-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="logo">
+    <div className="site-branding-area">
+        <div className="container">
+            <div className="row">
+                <div className="col-sm-6">
+                    <div className="logo">
                         <h1><Link to="/">e<span>Electronics</span></Link></h1>
                     </div>
                 </div>
                 
-                <div class="col-sm-6">
-                    <div class="shopping-item">
-                    <Link to="/cart">Cart - <span class="cart-amunt">$800</span> <i class="fa fa-shopping-cart"></i> <span class="product-count">{cartItems.map(c => c.cantidad).reduce((a, b) => a + b, 0)}</span></Link>
+                <div className="col-sm-6">
+                    <div className="shopping-item">
+                    <Link to="/cart"> <i className="fa fa-shopping-cart icon-large"></i> <span className="product-count">{cartItems.map(c => c.cantidad).reduce((a, b) => a + b, 0)}</span></Link>
                     </div>
                 </div>
             </div>
         </div>
     </div> 
-    <div class="mainmenu-area">
-        <div class="container">
-            <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+    <div className="mainmenu-area">
+        <div className="container">
+            <div className="row">
+                <div className="navbar-header">
+                    <button type="button" className="my-navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span className="sr-only">Toggle navigation</span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
+                        <span className="icon-bar"></span>
                     </button>
                 </div> 
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><Link to="/">Home</Link></li>
+                <div className="navbar-collapse collapse">
+                    <ul className="nav navbar-nav">
+                        <li className="active"><Link to="/">Home</Link></li>
                    
 
                     

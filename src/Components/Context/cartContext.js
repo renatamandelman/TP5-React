@@ -1,6 +1,5 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import { ProductosArray } from '../../BD'
-import Productos from '../Productos'
 
 const ShoppingCartContext = createContext()
 
@@ -11,6 +10,12 @@ export function useCartContext() {
 export function ShoppingCartProvider({ children }) {
     const [cartItems, setCartItems] = useState([])
     
+    useEffect(() => {
+        console.log(cartItems);
+        console.log(
+            cartItems.map(c => c.cantidad).reduce((a, b) => a + b, 0));
+    }, [cartItems])
+
     const AddToCart = (id) =>{
         const producto = ProductosArray.find(prod => prod.id === id)
         const newCart = cartItems

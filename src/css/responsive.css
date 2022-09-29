@@ -76,12 +76,12 @@ div.cart-collaterals ul.products li.product {
   text-align: center;
 }    
     
-.navbar-toggle {
+.my-navbar-toggle {
     border-color: #fff;
     float: none;
     margin: 10px auto;
 }
-.navbar-toggle .icon-bar { background: none repeat scroll 0 0 #fff }  
+.my-navbar-toggle .icon-bar { background: none repeat scroll 0 0 #fff }  
 .navbar-collapse.collapse.in {
   background: none repeat scroll 0 0 #1abc9c;
   position: relative;

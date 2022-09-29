@@ -1,5 +1,5 @@
 import React from "react";
-import Productos from "../Productos";
+import Productos from "../Products/Productos";
 
 
 function Body() {
@@ -7,11 +7,11 @@ function Body() {
     return (
         <>
 
-            {/* <div class="product-big-title-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="product-bit-title text-center">
+            {/* <div className="product-big-title-area">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="product-bit-title text-center">
                                 <h2>Shop</h2>
                             </div>
                         </div>
@@ -20,18 +20,18 @@ function Body() {
             </div> */}
 
 
-            <div class="single-product-area">
-                <div class="zigzag-bottom"></div>
-                <div class="container">
+            <div className="single-product-area">
+                <div className="zigzag-bottom"></div>
+                <div className="container">
                     <div className="row ">
 
                        <Productos/>
                 </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="product-pagination text-center">
+                    <div className="row">
+                        <div className="col-md-12">
+                            <div className="product-pagination text-center">
                                 <nav>
-                                    <ul class="pagination">
+                                    <ul className="pagination">
                                         <li>
                                             <a href="#" aria-label="Previous">
                                                 <span aria-hidden="true">&laquo;</span>

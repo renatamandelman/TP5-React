@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 //import App from './App'
 import Body from './Components/Layout/Body';
 import Header from "./Components/Layout/Header";
-import Cart from './Components/Cart'
+import Cart from './Components/Cart/Cart.js'
 import NotFound from './Components/Layout/NotFound'
 import Footer from "./Components/Layout/Footer";
 

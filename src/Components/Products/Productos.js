@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {ProductosArray} from '../BD'
+import {ProductosArray} from '../../BD'
 import ProductSingle from './ProductSingle'
 
 function Productos() {
