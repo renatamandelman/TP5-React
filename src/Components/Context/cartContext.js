@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react'
+import { createContext, useContext, useEffect, useMemo, useState } from 'react'
 import { ProductosArray } from '../../BD'
 
 const ShoppingCartContext = createContext()
@@ -9,11 +9,8 @@ export function useCartContext() {
 
 export function ShoppingCartProvider({ children }) {
     const [cartItems, setCartItems] = useState([])
-    
-    useEffect(() => {
-        console.log(cartItems);
-        console.log(
-            cartItems.map(c => c.cantidad).reduce((a, b) => a + b, 0));
+    const total = useMemo(() => {
+        return cartItems.map(c => c.cantidad * c.precio).reduce((a, b) => a + b, 0)
     }, [cartItems])
 
     const AddToCart = (id) =>{
@@ -45,7 +42,7 @@ export function ShoppingCartProvider({ children }) {
 
    
     return (
-        <ShoppingCartContext.Provider value={{cartItems, setCartItems, AddToCart} }>
+        <ShoppingCartContext.Provider value={{cartItems, setCartItems, AddToCart, total} }>
             {children}
         </ShoppingCartContext.Provider>
     )

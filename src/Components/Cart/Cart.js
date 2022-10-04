@@ -6,7 +6,7 @@ import CartItem from "./cartItem";
 
 
 function Cart() {
-    const { cartItems, AddToCart } = useCartContext()
+    const { cartItems, AddToCart, total } = useCartContext()
     return (
         <>
 
@@ -106,13 +106,10 @@ function Cart() {
 
                                             <hr className="mb-4" style={{height: '2px', backgroundColor: '#1266f1', opacity: 1}} />
 
-                                            <div className="d-flex justify-content-between px-x">
-                                                <p className="fw-bold">Discount:</p>
-                                                <p className="fw-bold">95$</p>
-                                            </div>
+                                            
                                             <div className="d-flex justify-content-between p-2 mb-2" style={{backgroundColor: '#e1f5fe'}}>
                                                 <h5 className="fw-bold mb-0">Total:</h5>
-                                                <h5 className="fw-bold mb-0">2261$</h5>
+                                                <h5 className="fw-bold mb-0">${total}</h5>
                                             </div>
 
                                         </div>
@@ -157,7 +154,7 @@ function Cart() {
                                                 <button type="button" className="btn btn-primary btn-block btn-lg">Buy now</button>
 
                                                 <h5 className="fw-bold mb-5" style={{position: 'absolute', bottom: 0}}>
-                                                    <a href="#!"><i className="fas fa-angle-left me-2"></i>Back to shopping</a>
+                                                    <a href="#!"><i className="fa fa-angle-left me-2"></i>Back to shopping</a>
                                                 </h5>
 
                                             </form>

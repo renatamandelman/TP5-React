@@ -40,17 +40,16 @@ const CartItem = ({cantidad,title, precio, img}) => {
             className="img-fluid" style={{width: '150px'}} alt="Generic placeholder image"/>
         </div>
         <div className="flex-grow-1 ms-3">
-          <a href="#!" className="float-end text-black"><i className="fas fa-times"></i></a>
+          <a href="#!" className="float-end text-black"><i className="fa fa-times"></i></a>
           <h5 className="text-primary">{title}</h5>
           <div className="d-flex align-items-center">
             <p className="fw-bold mb-0 me-5 pe-3">${precio}</p>
             <div className="def-number-input number-input safari_only">
-              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                className="minus"></button>
-              <input className="quantity fw-bold text-black" min="0" name="quantity" value="1"
+              <button className="minus" value="-"><i className="fa-solid fa-minus"></i> </button>
+              <input className="quantity fw-bold text-black" min="0" name="quantity" value={cantidad}
                 type="number"/>
-              <button onClick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                className="plus"></button>
+              <button 
+                className="plus" value="+"></button>
             </div>
           </div>
         </div>
