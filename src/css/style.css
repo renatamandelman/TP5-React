@@ -161,8 +161,8 @@ line-height: 90px;
     padding: 20px;
 }
 
-.mainmenu-area ul.navbar-nav li:hover a, .mainmenu-area ul.navbar-nav li.active a {background: #222}
-.mainmenu-area .nav > li > a:focus {color: #000}
+.mainmenu-area ul.navbar-nav li:hover a {background: rgba(0, 0, 0, 0.623)}
+.mainmenu-area .nav > li > a:focus {color: rgba(255, 255, 255, 0.993)}
 
 .slider-area {clear: both}
 .slider-area, .promo-area, .brands-area, .maincontent-area, .footer-top-area, .product-widget-area, .product-breadcroumb-area, .single-product-area {position: relative;overflow: hidden}
@@ -698,10 +698,7 @@ input[type="submit"]:hover, button[type=submit]:hover {background-color: #222}
     margin-right: 10px;
     text-decoration: none;
 }
-.quantity {
-    float: left;
-    margin-right: 15px;
-}
+
 .quantity input[type="number"] {
     border: 1px solid #1abc9c;
     padding: 5px;
@@ -1020,7 +1017,7 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
 .product-upper { 
     height: 335.75px;
 }
-/*
+
 .number-input input[type="number"] {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
@@ -1134,4 +1131,4 @@ div.cart-collaterals ul.products li.product:hover .add_to_cart_button{background
     .shopping-cart .def-number-input.number-input button.plus:before,
     .shopping-cart .def-number-input.number-input button.plus:after {
     background-color: #4285f4;
-    }*/
+    }

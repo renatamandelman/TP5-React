@@ -49,7 +49,7 @@ function Header() {
                 <div className="container-fluid">
                     <div className="collapse navbar-collapse" style ={{ justifyContent:'center'}}>
                         <ul className="nav navbar-nav">
-                            <li className="active">
+                            <li className=" active">
                                 <Link className="active" aria-current="page" to="/">Home</Link>
                             </li>
                             <li className="nav-item">

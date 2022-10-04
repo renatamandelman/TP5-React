@@ -7,6 +7,7 @@ import Header from "./Components/Layout/Header";
 import Cart from './Components/Cart/Cart.js'
 import NotFound from './Components/Layout/NotFound'
 import Footer from "./Components/Layout/Footer";
+import { DetalleProducto } from "./Components/Products/DetalleProducto";
 
 
 const AppRouter = () => {
@@ -18,6 +19,7 @@ const AppRouter = () => {
                 <Route path="/" element={<Body/>} />
                 <Route path="/cart" element={<Cart />} />
                 <Route path="*" element={<NotFound/>} />
+                <Route path="/:id" element={<DetalleProducto />} />
 
             </Routes>
             <Footer/>

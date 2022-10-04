@@ -15,7 +15,7 @@ function ProductSingle({ id,title, precio, img }) {
                                 <img src={img} alt="" className="img" style={{ height: '100%', objectFit:'contain' }} />
                                 <div className="product-hover">
                                     <button  onClick={() => AddToCart(id)}  className="add-to-cart-link"><i className="fa fa-shopping-cart"></i> Add to cart</button>
-                                    <Link to="*" className="view-details-link"><i className="fa fa-link"></i> See details</Link>
+                                    <Link to={`/${id}`} className="view-details-link"><i className="fa fa-link"></i> See details</Link>
                                 </div>
                             </div>
                         </div>

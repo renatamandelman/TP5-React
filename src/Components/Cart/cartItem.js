@@ -45,7 +45,7 @@ const CartItem = ({cantidad,title, precio, img}) => {
           <div className="d-flex align-items-center">
             <p className="fw-bold mb-0 me-5 pe-3">${precio}</p>
             <div className="def-number-input number-input safari_only">
-              <button className="minus" value="-"><i className="fa-solid fa-minus"></i> </button>
+              <button className="minus" value="-"></button>
               <input className="quantity fw-bold text-black" min="0" name="quantity" value={cantidad}
                 type="number"/>
               <button 
