@@ -9,7 +9,10 @@ export function useCartContext() {
 
 export function ShoppingCartProvider({ children }) {
     const [cartItems, setCartItems] = useState([])
+    const [cantTotal, setCantTotal] = useState(0)
+
     const total = useMemo(() => {
+        console.log(cartItems);
         return cartItems.map(c => c.cantidad * c.precio).reduce((a, b) => a + b, 0)
     }, [cartItems])
 
@@ -39,10 +42,45 @@ export function ShoppingCartProvider({ children }) {
 
 
     }
-
+    const Sumar =(id)=>{
+        setCartItems(cartItems.map((prod) => {
+            if(prod.id === id) {
+                return (
+                    {
+                        ...prod,
+                        cantidad: prod.cantidad+=1
+                    }
+                )
+            } else {
+                return prod
+            }
+        }))
+    }
+    const Restar =(id)=>{
+        setCartItems(cartItems.map((prod) => {
+            if(prod.id === id) {
+                if (prod.cantidad > 1){
+                    return (
+                        {
+                            ...prod,
+                            cantidad: prod.cantidad-=1
+                        }
+                    )
+                }
+            } else {
+                return prod
+            }
+        }).filter(p => p !== undefined))
+    }
+    const removeProduct = (id) => {
+        const cantProductosAEliminar =  cartItems.filter((prod) => prod.id === id)
+        const newCart =  cartItems.filter((prod) => prod.id !== id)
+        setCartItems(newCart)
+        setCantTotal(cantTotal - cantProductosAEliminar[0].cantidad)
+    }
    
     return (
-        <ShoppingCartContext.Provider value={{cartItems, setCartItems, AddToCart, total} }>
+        <ShoppingCartContext.Provider value={{cartItems, setCartItems, AddToCart, total, Sumar ,Restar,removeProduct} }>
             {children}
         </ShoppingCartContext.Provider>
     )

@@ -15,14 +15,14 @@ function Header() {
                     <div className="row">
                         <div className="col-sm-6">
                             <div className="logo">
-                                <h1><Link to="/">e<span>Electronics</span></Link></h1>
+                                <h1 ><Link to="/"style={{textDecoration: 'none'}}>e<span>Electronics</span></Link></h1>
                             </div>
                         </div>
 
-                        <div className="col-sm-6">
+                        <div className="col-sm-6"> <Link to="/cart">
                             <div className="shopping-item">
-                                <Link to="/cart"> <i className="fa fa-shopping-cart icon-large"></i> <span className="product-count">{cartItems.map(c => c.cantidad).reduce((a, b) => a + b, 0)}</span></Link>
-                            </div>
+                                <i className="fa fa-shopping-cart icon-large" style={{color: 'grey'}}></i> <span className="product-count">{cartItems.map(c => c.cantidad).reduce((a, b) => a + b, 0)}</span>
+                            </div></Link>
                         </div>
                     </div>
                 </div>
@@ -45,9 +45,9 @@ function Header() {
                 </div>
 
             </div> </nav> */}
-            <nav className="navbar navbar-expand-lg mainmenu-area " style={{ height: '70px'}}>
+            <nav className="navbar navbar-expand-lg mainmenu-area " style={{ height: '70px' }}>
                 <div className="container-fluid">
-                    <div className="collapse navbar-collapse" style ={{ justifyContent:'center'}}>
+                    <div className="collapse navbar-collapse" style={{ justifyContent: 'center' }}>
                         <ul className="nav navbar-nav">
                             <li className=" active">
                                 <Link className="active" aria-current="page" to="/">Home</Link>

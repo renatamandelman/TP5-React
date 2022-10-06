@@ -2,30 +2,34 @@ export const ProductosArray = [
    {
 
       "id": 1,
-      "title": "Sony Smart TV - 2015",
-      "img": "https://wpexpand.com/demo/html/eElectronics/img/product-1.jpg",
-      "precio": 700
+      "title": "Iphone 14 pro max",
+      "img": "https://png.monster/wp-content/uploads/2022/09/png.monster-209-323x370.png",
+      "precio": 978.000
 
    },
    {
       "id": 2,
-      "title": "Apple new mac book 2015 March",
-      "img": "https://wpexpand.com/demo/html/eElectronics/img/product-2.jpg",
-      "precio": 999
+      "title": "Xiaomi Mi Smart Band 6 Smart Watch Reloj Inteligente",
+      "img": "https://cdn-xiaomi.waugi.com.ar/1100-thickbox_default/xiaomi-mi-smart-band-6-smart-watch-reloj-inteligente.jpg",
+      "precio": 14.999
 
    },
    {
       "id": 3,
-      "title": "Apple new iphone 6",
-      "img": "https://wpexpand.com/demo/html/eElectronics/img/product-3.jpg",
-      "precio": 425
+      "title": "Parlante Portatil JBL Flip 5 Black ",
+      "img":" https://www.pngmart.com/files/15/JBL-Audio-Speakers-Amplifier-Transparent-PNG.png",
+ 
+      "precio": 29.999
 
    },
    {
       "id": 4,
-      "title": "Sony playstation microsoft",
-      "img": "https://wpexpand.com/demo/html/eElectronics/img/product-4.jpg",
-      "precio": 225
+      "title": "Celular Galaxy A33 5G Awesome White",
+      "img": "https://samsungar.vtexassets.com/arquivos/ids/184261-1200-auto?width=1200&height=auto&aspect=true",     
+      "img2":"https://samsungar.vtexassets.com/arquivos/ids/182150-1200-auto?width=1200&height=auto&aspect=true",
+      "img3":"https://samsungar.vtexassets.com/arquivos/ids/182153-1200-auto?width=1200&height=auto&aspect=true",
+      "img4":"https://samsungar.vtexassets.com/arquivos/ids/182154-1200-auto?width=1200&height=auto&aspect=true",
+      "precio":  84.999
 
    },
    {

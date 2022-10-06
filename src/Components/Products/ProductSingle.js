@@ -8,11 +8,11 @@ function ProductSingle({ id,title, precio, img }) {
     return (
         <>
                 
-                <div className="product-carousel col-md-3 col-sm-6 ">
+                <div className="product-carousel col-md-3 col-sm-6 "  style={{backgroundColor:'#f5f5f5'}} >
                     <div className='single-product'>
                         <div className="product-f-image">
                             <div className="product-upper">
-                                <img src={img} alt="" className="img" style={{ height: '100%', objectFit:'contain' }} />
+                                <img src={img} alt="" className="img-card" style={{ height: '100%', objectFit:'contain' }} />
                                 <div className="product-hover">
                                     <button  onClick={() => AddToCart(id)}  className="add-to-cart-link"><i className="fa fa-shopping-cart"></i> Add to cart</button>
                                     <Link to={`/${id}`} className="view-details-link"><i className="fa fa-link"></i> See details</Link>

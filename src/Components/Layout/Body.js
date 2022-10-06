@@ -20,14 +20,14 @@ function Body() {
             </div> */}
 
 
-            <div className="single-product-area">
+            <div className="single-product-area " style={{backgroundColor:'#f5f5f5'}}>
                 <div className="zigzag-bottom"></div>
-                <div className="container">
-                    <div className="row ">
+                <div className="container"  style={{backgroundColor:'#f5f5f5'}}>
+                    <div className="row " style={{backgroundColor:'#f5f5f5'}}>
 
                        <Productos/>
                 </div>
-                    <div className="row">
+                    <div className="row"  style={{backgroundColor:'#f5f5f5'}}>
                         <div className="col-md-12">
                             <div className="product-pagination text-center">
                                 <nav>

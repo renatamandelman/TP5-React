@@ -5,6 +5,8 @@ import './css/style.css'
 //import './css/carousel.css'
 import { ShoppingCartProvider } from './Components/Context/cartContext';
 
+
+
 function App() {
   return (
     <ShoppingCartProvider>
