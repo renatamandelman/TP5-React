@@ -53,17 +53,17 @@ export const ProductosArray = [
    {
 
       "id": 7,
-      "title": "Xiaomi Mi 12 Lite 5G 8/256 Gb",
-      "img": "https://d2r9epyceweg5n.cloudfront.net/stores/001/388/250/products/mi-12-lite1-c0c6bec92eaa5c47b416644075792536-480-0.jpg",
-      "precio": 153.120
+      "title": "Samsung 12 Lite 5G 8/256 Gb",
+      "img": "https://images.samsung.com/is/image/samsung/p6pim/ar/sm-a525mzkearo/gallery/ar-galaxy-a52-a525-377973-sm-a525mzkearo-409828392?$720_576_PNG$",
+      "precio": 153.121
      
    },
    {
 
       "id": 8,
-      "title": "Xiaomi Note 10S 8/128 Gb",
-      "img": "https://d2r9epyceweg5n.cloudfront.net/stores/001/388/250/products/xiaom-note-10s-gris1-18363045eb78a72bc716265351235578-640-0.jpg",
-      "precio": 88.740
+      "title": "Macbook Air Pro ",
+      "img": "https://support.apple.com/library/APPLE/APPLECARE_ALLGEOS/SP858/mbp16-gray.png",
+      "precio": 88.744
      
    },
     {
