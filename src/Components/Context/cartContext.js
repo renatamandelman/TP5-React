@@ -11,10 +11,24 @@ export function ShoppingCartProvider({ children }) {
     const [cartItems, setCartItems] = useState([])
     const [cantTotal, setCantTotal] = useState(0)
 
+    useEffect(() => {
+        let x = localStorage.getItem("cartItems")
+        setCartItems(JSON.parse(x))
+        let y = localStorage.getItem("cantTotal")
+        setCantTotal(JSON.parse(y))
+
+    }, []);
+
+      useEffect(() => {
+          localStorage.setItem("cartItems", JSON.stringify(cartItems));
+          localStorage.setItem("CantTotal", JSON.stringify(cantTotal))
+      }, [cartItems]);
+
     const total = useMemo(() => {
         console.log(cartItems);
         return cartItems.map(c => c.cantidad * c.precio).reduce((a, b) => a + b, 0)
     }, [cartItems])
+
 
     const AddToCart = (id) =>{
         const producto = ProductosArray.find(prod => prod.id === id)
